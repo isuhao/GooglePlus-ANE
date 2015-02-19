@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0871E5D1A5D89290054509A /* GooglePlusIosExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B0871E5C1A5D89290054509A /* GooglePlusIosExtension.m */; };
+		B0871E771A5D8B220054509A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0871E721A5D8AB50054509A /* AddressBook.framework */; };
+		B0871E781A5D8B270054509A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0871E741A5D8ABC0054509A /* AssetsLibrary.framework */; };
+		B0871E7A1A5D8B430054509A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0871E791A5D8B430054509A /* Foundation.framework */; };
+		B0871E7C1A5D8B4A0054509A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0871E7B1A5D8B4A0054509A /* CoreLocation.framework */; };
+		B0871E7E1A5D8B500054509A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0871E7D1A5D8B500054509A /* CoreMotion.framework */; };
+		B0871E801A5D8B540054509A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0871E7F1A5D8B540054509A /* CoreGraphics.framework */; };
+		B0871E821A5D8B590054509A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0871E811A5D8B590054509A /* CoreText.framework */; };
+		B0871E841A5D8B5D0054509A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0871E831A5D8B5D0054509A /* MediaPlayer.framework */; };
+		B0871E861A5D8B610054509A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0871E851A5D8B610054509A /* Security.framework */; };
+		B0871E881A5D8B650054509A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0871E871A5D8B650054509A /* SystemConfiguration.framework */; };
+		B0871E8A1A5D8B6B0054509A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0871E891A5D8B6B0054509A /* UIKit.framework */; };
+		B0871E8D1A5D8B870054509A /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0871E8B1A5D8B870054509A /* GoogleOpenSource.framework */; };
+		B0871E8E1A5D8B870054509A /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0871E8C1A5D8B870054509A /* GooglePlus.framework */; };
+		B0871E921A5D8F720054509A /* GooglePlusHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = B0871E911A5D8F720054509A /* GooglePlusHelpers.m */; };
+		B0FD35311A769677009BABDC /* TypeConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FD35301A769677009BABDC /* TypeConversion.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B0871E551A5D89290054509A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B0871E571A5D89290054509A /* libGooglePlusIosExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGooglePlusIosExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0871E5C1A5D89290054509A /* GooglePlusIosExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GooglePlusIosExtension.m; sourceTree = "<group>"; };
+		B0871E711A5D89610054509A /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
+		B0871E721A5D8AB50054509A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		B0871E741A5D8ABC0054509A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		B0871E791A5D8B430054509A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B0871E7B1A5D8B4A0054509A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B0871E7D1A5D8B500054509A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B0871E7F1A5D8B540054509A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B0871E811A5D8B590054509A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		B0871E831A5D8B5D0054509A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B0871E851A5D8B610054509A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B0871E871A5D8B650054509A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B0871E891A5D8B6B0054509A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B0871E8B1A5D8B870054509A /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		B0871E8C1A5D8B870054509A /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		B0871E901A5D8F720054509A /* GooglePlusHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooglePlusHelpers.h; sourceTree = "<group>"; };
+		B0871E911A5D8F720054509A /* GooglePlusHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooglePlusHelpers.m; sourceTree = "<group>"; };
+		B0FD352F1A769677009BABDC /* TypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeConversion.h; sourceTree = "<group>"; };
+		B0FD35301A769677009BABDC /* TypeConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeConversion.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0871E541A5D89290054509A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0871E8E1A5D8B870054509A /* GooglePlus.framework in Frameworks */,
+				B0871E8D1A5D8B870054509A /* GoogleOpenSource.framework in Frameworks */,
+				B0871E8A1A5D8B6B0054509A /* UIKit.framework in Frameworks */,
+				B0871E881A5D8B650054509A /* SystemConfiguration.framework in Frameworks */,
+				B0871E861A5D8B610054509A /* Security.framework in Frameworks */,
+				B0871E841A5D8B5D0054509A /* MediaPlayer.framework in Frameworks */,
+				B0871E821A5D8B590054509A /* CoreText.framework in Frameworks */,
+				B0871E801A5D8B540054509A /* CoreGraphics.framework in Frameworks */,
+				B0871E7E1A5D8B500054509A /* CoreMotion.framework in Frameworks */,
+				B0871E7C1A5D8B4A0054509A /* CoreLocation.framework in Frameworks */,
+				B0871E7A1A5D8B430054509A /* Foundation.framework in Frameworks */,
+				B0871E781A5D8B270054509A /* AssetsLibrary.framework in Frameworks */,
+				B0871E771A5D8B220054509A /* AddressBook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0871E4E1A5D89290054509A = {
+			isa = PBXGroup;
+			children = (
+				B0871E591A5D89290054509A /* GooglePlusIosExtension */,
+				B0871E761A5D8AFF0054509A /* Frameworks */,
+				B0871E581A5D89290054509A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0871E581A5D89290054509A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0871E571A5D89290054509A /* libGooglePlusIosExtension.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0871E591A5D89290054509A /* GooglePlusIosExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B0871E711A5D89610054509A /* FlashRuntimeExtensions.h */,
+				B0FD352F1A769677009BABDC /* TypeConversion.h */,
+				B0FD35301A769677009BABDC /* TypeConversion.m */,
+				B0871E5C1A5D89290054509A /* GooglePlusIosExtension.m */,
+				B0871E901A5D8F720054509A /* GooglePlusHelpers.h */,
+				B0871E911A5D8F720054509A /* GooglePlusHelpers.m */,
+			);
+			path = GooglePlusIosExtension;
+			sourceTree = "<group>";
+		};
+		B0871E761A5D8AFF0054509A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0871E8B1A5D8B870054509A /* GoogleOpenSource.framework */,
+				B0871E8C1A5D8B870054509A /* GooglePlus.framework */,
+				B0871E891A5D8B6B0054509A /* UIKit.framework */,
+				B0871E871A5D8B650054509A /* SystemConfiguration.framework */,
+				B0871E851A5D8B610054509A /* Security.framework */,
+				B0871E831A5D8B5D0054509A /* MediaPlayer.framework */,
+				B0871E811A5D8B590054509A /* CoreText.framework */,
+				B0871E7F1A5D8B540054509A /* CoreGraphics.framework */,
+				B0871E7D1A5D8B500054509A /* CoreMotion.framework */,
+				B0871E7B1A5D8B4A0054509A /* CoreLocation.framework */,
+				B0871E791A5D8B430054509A /* Foundation.framework */,
+				B0871E741A5D8ABC0054509A /* AssetsLibrary.framework */,
+				B0871E721A5D8AB50054509A /* AddressBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0871E561A5D89290054509A /* GooglePlusIosExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0871E6B1A5D89290054509A /* Build configuration list for PBXNativeTarget "GooglePlusIosExtension" */;
+			buildPhases = (
+				B0871E531A5D89290054509A /* Sources */,
+				B0871E541A5D89290054509A /* Frameworks */,
+				B0871E551A5D89290054509A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GooglePlusIosExtension;
+			productName = GooglePlusIosExtension;
+			productReference = B0871E571A5D89290054509A /* libGooglePlusIosExtension.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0871E4F1A5D89290054509A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = DaVikingCode;
+				TargetAttributes = {
+					B0871E561A5D89290054509A = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = B0871E521A5D89290054509A /* Build configuration list for PBXProject "GooglePlusIosExtension" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B0871E4E1A5D89290054509A;
+			productRefGroup = B0871E581A5D89290054509A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0871E561A5D89290054509A /* GooglePlusIosExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0871E531A5D89290054509A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FD35311A769677009BABDC /* TypeConversion.m in Sources */,
+				B0871E5D1A5D89290054509A /* GooglePlusIosExtension.m in Sources */,
+				B0871E921A5D8F720054509A /* GooglePlusHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B0871E691A5D89290054509A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B0871E6A1A5D89290054509A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0871E6C1A5D89290054509A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B0871E6D1A5D89290054509A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0871E521A5D89290054509A /* Build configuration list for PBXProject "GooglePlusIosExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0871E691A5D89290054509A /* Debug */,
+				B0871E6A1A5D89290054509A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0871E6B1A5D89290054509A /* Build configuration list for PBXNativeTarget "GooglePlusIosExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0871E6C1A5D89290054509A /* Debug */,
+				B0871E6D1A5D89290054509A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0871E4F1A5D89290054509A /* Project object */;
+}

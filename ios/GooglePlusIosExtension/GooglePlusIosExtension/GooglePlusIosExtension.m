@@ -89,6 +89,13 @@ DEFINE_ANE_FUNCTION(getAuth) {
     return NULL;
 }
 
+DEFINE_ANE_FUNCTION(getUserInfo) {
+    
+    [googlePlusHelpers getUserInfo];
+    
+    return NULL;
+}
+
 bool applicationOpenURLSourceApplication(id self, SEL _cmd, UIApplication* application, NSURL* url, NSString* sourceApplication, id annotation) {
     
     return [GPPURLHandler handleURL:url sourceApplication:sourceApplication annotation:annotation];
@@ -125,7 +132,8 @@ void GooglePlusContextInitializer(void* extData, const uint8_t* ctxType, FRECont
         MAP_FUNCTION(share, NULL),
         MAP_FUNCTION(getUserMail, NULL),
         MAP_FUNCTION(getUserID, NULL),
-        MAP_FUNCTION(getAuth, NULL)
+        MAP_FUNCTION(getAuth, NULL),
+        MAP_FUNCTION(getUserInfo, NULL)
     };
     
     *numFunctionsToSet = sizeof( functionMap ) / sizeof( FRENamedFunction );

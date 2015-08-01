@@ -74,6 +74,5 @@ public class GetGooglePlusToken extends AsyncTask<Void, Void, String> {
     protected void onPostExecute(String response) {
     	
     	GooglePlusExtension.context.dispatchStatusEventAsync("TOKEN", response);
-        //Log.d(TAG, "Google access token = " + response);
     }
 }

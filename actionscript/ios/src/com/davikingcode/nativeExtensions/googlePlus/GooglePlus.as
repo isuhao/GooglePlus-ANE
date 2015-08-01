@@ -93,6 +93,11 @@ package com.davikingcode.nativeExtensions.googlePlus {
 			extensionContext.call("getAuth");
 		}
 
+		public function getUserInfo():void {
+
+			extensionContext.call("getUserInfo");
+		}
+
 		public function debuggerHelper():String {
 			return "";
 		}

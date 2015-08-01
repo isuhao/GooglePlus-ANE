@@ -121,16 +121,14 @@
     
     GTLQueryPlus* query = [GTLQueryPlus queryForPeopleGetWithUserId:@"me"];
     
-    [[[GPPSignIn sharedInstance] plusService] executeQuery:query completionHandler:^(GTLServiceTicket *ticket,
-                                                                                     GTLPlusPerson *person,
-                                                                                     NSError *error) {
+    [[[GPPSignIn sharedInstance] plusService] executeQuery:query completionHandler:^(GTLServiceTicket *ticket, GTLPlusPerson *person, NSError *error) {
         
-        if (error) {
+        if (error)
+            NSLog(@"Received error %@", error);
             
-        } else {
-            
-            NSLog(@"%@", person.displayName);
-        }
+        else
+            [self dispatchEvent:@"USER_INFO" withParams:person.JSONString];
+        
     }];
 }
 

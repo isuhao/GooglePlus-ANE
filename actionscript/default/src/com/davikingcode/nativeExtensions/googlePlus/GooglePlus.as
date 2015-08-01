@@ -74,6 +74,12 @@ package com.davikingcode.nativeExtensions.googlePlus {
 		}
 
 		/**
+		* Get all the informations about the identified user. Listen to <code>GooglePlusEvent.USER_INFO</code> and read <code>informations</code> as a stringified JSON.
+		*/
+		public function getUserInfo():void {
+		}
+
+		/**
 		* <b>Android only!</b> Print into the <a href="http://developer.android.com/tools/debugging/ddms.html">DDMS</a> or <a href="http://developer.android.com/tools/help/monitor.html">Device Monitor</a> the <b>SHA1 key</b> and the 
 		* <b>package</b> that must be set inside the <a href="https://console.developers.google.com/project">Google+ console</a>.
 		* @return a String that contains your <b>SHA1</b> key!

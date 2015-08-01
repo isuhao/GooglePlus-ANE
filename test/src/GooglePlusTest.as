@@ -32,6 +32,7 @@ package {
 			_googlePlus.addEventListener(GooglePlusEvent.LOGIN_SUCCESSED, _loginSuccessed);
 			_googlePlus.addEventListener(GooglePlusEvent.POST_NOT_SHARED, _postNotShared);
 			_googlePlus.addEventListener(GooglePlusEvent.POST_SHARED, _postShared);
+			_googlePlus.addEventListener(GooglePlusEvent.USER_INFO, _userInfos);
 			_googlePlus.addEventListener(GooglePlusEvent.DISCONNECTED, _disconnected);
 			_googlePlus.addEventListener(GooglePlusEvent.TOKEN, _token);
 			
@@ -94,6 +95,7 @@ package {
 			_txtGoogleLogin.text = "Logged in Google+ ? True.";
 			
 			//_googlePlus.getAuth();
+			_googlePlus.getUserInfo();
 		}
 
 		private function _loginFailed(gpEvt:GooglePlusEvent):void {
@@ -108,6 +110,11 @@ package {
 			trace("post shared");
 			
 			_txtPostShared.text = "Post Shared";
+		}
+		
+		private function _userInfos(gpEvt:GooglePlusEvent):void {
+			
+			trace("user infos :" + gpEvt.informations);
 		}
 
 		private function _postNotShared(gpEvt:GooglePlusEvent):void {

@@ -1,2 +1,6 @@
+v1.1.0
+- added getAuth method for retrieve the authentification token.
+- retrieve all available user informations via getUserInfo method.
+
 v1.0.0
 - initial release.

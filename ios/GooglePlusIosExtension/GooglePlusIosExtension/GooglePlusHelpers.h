@@ -27,7 +27,6 @@
 - (NSString *) getUserMail;
 - (NSString *) getUserID;
 - (void) getAuth;
-
 - (void) getUserInfo;
 
 - (void) dispatchEvent:(NSString *) event withParams:(NSString * ) params;

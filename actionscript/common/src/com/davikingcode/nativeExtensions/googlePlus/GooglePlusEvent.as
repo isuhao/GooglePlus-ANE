@@ -14,6 +14,8 @@ package com.davikingcode.nativeExtensions.googlePlus {
 
 		static public const TOKEN:String = "TOKEN";
 
+		static public const USER_INFO:String = "USER_INFO";
+
 		private var _informations:String;
 
 		public function GooglePlusEvent(type:String, informations:String = "", bubbles:Boolean = false, cancelable:Boolean = false) {

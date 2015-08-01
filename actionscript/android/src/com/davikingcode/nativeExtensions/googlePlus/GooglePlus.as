@@ -43,30 +43,7 @@ package com.davikingcode.nativeExtensions.googlePlus {
 
 		private function _onStatus(sEvt:StatusEvent):void {
 
-			switch (sEvt.code) {
-
-				case GooglePlusEvent.LOGIN_FAILED:
-					dispatchEvent(new GooglePlusEvent(GooglePlusEvent.LOGIN_FAILED));
-					break;
-
-				case GooglePlusEvent.LOGIN_SUCCESSED:
-					dispatchEvent(new GooglePlusEvent(GooglePlusEvent.LOGIN_SUCCESSED));
-					break;
-
-				case GooglePlusEvent.POST_SHARED:
-					dispatchEvent(new GooglePlusEvent(GooglePlusEvent.POST_SHARED));
-					_deleteSharedImage();
-					break;
-
-				case GooglePlusEvent.POST_NOT_SHARED:
-					dispatchEvent(new GooglePlusEvent(GooglePlusEvent.POST_NOT_SHARED));
-					_deleteSharedImage();
-					break;
-
-				case GooglePlusEvent.DISCONNECTED:
-					dispatchEvent(new GooglePlusEvent(GooglePlusEvent.DISCONNECTED));
-					break;
-			}
+			dispatchEvent(new GooglePlusEvent(sEvt.code, sEvt.level));
 		}
 
 		public function login(iOSKey:String, extended:Boolean = false):void {
@@ -109,6 +86,11 @@ package com.davikingcode.nativeExtensions.googlePlus {
 		public function getUserID():String {
 			
 			return extensionContext.call("getUserID") as String;
+		}
+		
+		public function getAuth():void {
+			
+			extensionContext.call("getAuth");
 		}
 
 		public function debuggerHelper():String {

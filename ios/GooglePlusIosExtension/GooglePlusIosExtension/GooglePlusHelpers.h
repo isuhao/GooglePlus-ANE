@@ -26,6 +26,7 @@
 
 - (NSString *) getUserMail;
 - (NSString *) getUserID;
+- (void) getAuth;
 
 - (void) getUserInfo;
 

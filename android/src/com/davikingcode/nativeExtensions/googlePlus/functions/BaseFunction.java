@@ -12,7 +12,7 @@ import com.adobe.fre.FREObject;
 import com.davikingcode.nativeExtensions.googlePlus.GooglePlusExtension;
 import com.davikingcode.nativeExtensions.googlePlus.GooglePlusExtensionContext;
 
-public class BaseFunction implements FREFunction {
+abstract public class BaseFunction implements FREFunction {
 
 	@Override
 	public FREObject call(FREContext context, FREObject[] args) {

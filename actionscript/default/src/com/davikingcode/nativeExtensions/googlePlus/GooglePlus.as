@@ -66,6 +66,12 @@ package com.davikingcode.nativeExtensions.googlePlus {
 		public function getUserID():String {
 			return "";
 		}
+		
+		/**
+		* Get the authentification token. Listen to <code>GooglePlusEvent.TOKEN</code> and read <code>informations</code>.
+		*/
+		public function getAuth():void {
+		}
 
 		/**
 		* <b>Android only!</b> Print into the <a href="http://developer.android.com/tools/debugging/ddms.html">DDMS</a> or <a href="http://developer.android.com/tools/help/monitor.html">Device Monitor</a> the <b>SHA1 key</b> and the 

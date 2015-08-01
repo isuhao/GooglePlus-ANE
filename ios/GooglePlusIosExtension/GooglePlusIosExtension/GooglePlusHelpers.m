@@ -11,6 +11,8 @@
 #import "GoogleOpenSource/GTLQueryPlus.h"
 #import "GoogleOpenSource/GTLPlusPerson.h"
 #import "GoogleOpenSource/GTLServicePlus.h"
+#import "TypeConversion.h"
+#import <GoogleOpenSource/GoogleOpenSource.h>
 
 @interface GooglePlusHelpers ()
 
@@ -106,6 +108,13 @@
 - (NSString *) getUserID {
     
     return  [GPPSignIn sharedInstance].userID;
+}
+
+- (void) getAuth {
+    
+    GTMOAuth2Authentication *auth = [GPPSignIn sharedInstance].authentication;
+    
+    [self dispatchEvent:@"TOKEN" withParams:auth.accessToken];
 }
 
 - (void) getUserInfo {

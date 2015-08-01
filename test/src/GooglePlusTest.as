@@ -33,6 +33,7 @@ package {
 			_googlePlus.addEventListener(GooglePlusEvent.POST_NOT_SHARED, _postNotShared);
 			_googlePlus.addEventListener(GooglePlusEvent.POST_SHARED, _postShared);
 			_googlePlus.addEventListener(GooglePlusEvent.DISCONNECTED, _disconnected);
+			_googlePlus.addEventListener(GooglePlusEvent.TOKEN, _token);
 			
 			_txtGoogleLogin = new TextField();
 			_txtGoogleLogin.defaultTextFormat = new TextFormat("Arial", 20);
@@ -91,6 +92,8 @@ package {
 			_btnGoogleLogin.graphics.endFill();
 			
 			_txtGoogleLogin.text = "Logged in Google+ ? True.";
+			
+			//_googlePlus.getAuth();
 		}
 
 		private function _loginFailed(gpEvt:GooglePlusEvent):void {
@@ -123,6 +126,11 @@ package {
 			_btnGoogleLogin.graphics.endFill();
 			
 			_txtGoogleLogin.text = "Logged in Google+ ? False.";
+		}
+		
+		private function _token(gpEvt:GooglePlusEvent):void {
+			
+			trace("token: " + gpEvt.informations);
 		}
 	}
 }

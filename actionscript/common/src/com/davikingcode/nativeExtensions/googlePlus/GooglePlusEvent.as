@@ -12,8 +12,19 @@ package com.davikingcode.nativeExtensions.googlePlus {
 
 		static public const DISCONNECTED:String = "DISCONNECTED";
 
-		public function GooglePlusEvent(type:String, bubbles:Boolean = false, cancelable:Boolean = false) {
+		static public const TOKEN:String = "TOKEN";
+
+		private var _informations:String;
+
+		public function GooglePlusEvent(type:String, informations:String = "", bubbles:Boolean = false, cancelable:Boolean = false) {
 			super(type, bubbles, cancelable);
+
+			_informations = informations;
+		}
+
+		public function get informations():String {
+
+			return _informations;
 		}
 	}
 }

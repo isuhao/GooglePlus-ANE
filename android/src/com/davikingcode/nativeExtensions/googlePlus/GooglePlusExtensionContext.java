@@ -9,6 +9,7 @@ import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
 import com.davikingcode.nativeExtensions.googlePlus.functions.DebuggerHelperFunction;
 import com.davikingcode.nativeExtensions.googlePlus.functions.DisconnectFunction;
+import com.davikingcode.nativeExtensions.googlePlus.functions.GetAuthFunction;
 import com.davikingcode.nativeExtensions.googlePlus.functions.GetUserIDFunction;
 import com.davikingcode.nativeExtensions.googlePlus.functions.GetUserMailFunction;
 import com.davikingcode.nativeExtensions.googlePlus.functions.IsAuthenticatedFunction;
@@ -33,6 +34,7 @@ public class GooglePlusExtensionContext extends FREContext {
         functionMap.put("disconnect", new DisconnectFunction());
         functionMap.put("getUserMail", new GetUserMailFunction());
         functionMap.put("getUserID", new GetUserIDFunction());
+        functionMap.put("getAuth", new GetAuthFunction());
 
         return functionMap;
     }

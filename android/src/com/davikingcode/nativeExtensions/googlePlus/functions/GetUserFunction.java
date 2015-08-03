@@ -16,7 +16,7 @@ public class GetUserFunction extends BaseFunction implements FREFunction {
         
         Person person = Plus.PeopleApi.getCurrentPerson(LoginActivity.mGoogleApiClient);
         
-        GooglePlusExtension.context.dispatchStatusEventAsync("USER_INFO", person.toString());
+        GooglePlusExtension.context.dispatchStatusEventAsync("USER_INFO", person.toString().replace("\\", ""));
 
         return null;
     }

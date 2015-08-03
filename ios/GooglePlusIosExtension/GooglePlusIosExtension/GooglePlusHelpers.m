@@ -127,7 +127,7 @@
             NSLog(@"Received error %@", error);
             
         else
-            [self dispatchEvent:@"USER_INFO" withParams:person.JSONString];
+            [self dispatchEvent:@"USER_INFO" withParams:[person.JSONString stringByReplacingOccurrencesOfString:@"\\/" withString:@"/"]];
         
     }];
 }

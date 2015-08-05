@@ -1,3 +1,7 @@
+v1.1.1
+- removed the \/ from getUserInfo json.
+- created a second ANE without the Google Services jar, res & bundle folders.
+
 v1.1.0
 - added getAuth method for retrieve the authentification token.
 - retrieve all available user informations via getUserInfo method.
